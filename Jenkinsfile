@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh './gradlew build --no-daemon'
         sh 'pwd && ls -larth'
-        archiveArtifacts artifacts: 'dest/result.zip'
+        archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
   }
